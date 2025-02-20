@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://kaustubh-sen.vercel.app/sitemap.xml
