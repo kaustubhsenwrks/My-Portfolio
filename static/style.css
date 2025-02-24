@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Satisfy&display=swap');
+
 body {
     font-family: Arial, sans-serif;
     background: #121212;
@@ -18,7 +19,8 @@ body {
     text-align: left;
     animation: fadeIn 1.5s ease-in-out;
 }
-h1{
+
+h1 {
     font-family: "Charm", serif;
     font-weight: 400;
     font-style: normal;
@@ -62,7 +64,7 @@ h1{
 
 .hero-text .btn:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 15px #39FF14;
+    box-shadow: 0 0 15px #d414ff;
 }
 
 /* Animations */
@@ -167,6 +169,7 @@ h1{
     padding: 30px 0;
     min-height: 20rem;
     text-align: center;
+    min-width: 5rem;
     background: rgba(255, 255, 255, 0.05);
     border-radius: 20px;
     margin: 20px;
@@ -175,6 +178,185 @@ h1{
     justify-content: space-evenly;
     align-items: center;
     scroll-margin-top: 80px;
+}
+
+section ul {
+    padding-left: 0;
+}
+
+/* Skills Section */
+.skills-h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Skills Container */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+/* Individual Skill */
+.skill {
+    background: #1e1e1e;
+    padding: 1.5rem;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 350px;
+    cursor: pointer;
+}
+
+/* Hover Effects */
+.skill:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.15);
+    color: #fff;
+}
+
+/* Skill Icons */
+.skill img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect on Icon */
+.skill:hover img {
+    transform: scale(1.1);
+}
+
+/* Skill Info */
+.skill-info {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Skill Title */
+.skill-info h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #ddd;
+    margin-bottom: 0.5rem;
+}
+
+/* Skill Description */
+.skill-info p {
+    font-size: 0.9rem;
+    color: #aaa;
+    line-height: 1.4;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .skills-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        justify-items: center;
+    }
+
+    .skill {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .skill img {
+        width: 40px;
+        height: 40px;
+    }
+    #skills{
+        width: 90%;
+    }
+    #projects{
+        width: 90%;
+    }
+    .projects-h2{
+        font-size: 2rem;
+    }
+    .skills-h2{
+        font-size: 2rem;
+    }
+    #achievements{
+        width: 90%;
+    }
+    #contact{
+        width: 90%;
+    }
+}
+#skills{
+    box-shadow: 0 0 10px rgb(213, 146, 255);
+}
+#projects{
+    box-shadow: 0 0 10px rgb(213, 146, 255);
+}
+#achievements{
+    box-shadow: 0 0 10px rgb(213, 146, 255);
+}
+#contact{
+    box-shadow: 0 0 10px rgb(213, 146, 255);
+}
+.projects-h2{
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+.skills-div {
+    width: 25rem;
+    min-height: 15rem;
+    background: rgba(255, 255, 255, 0.1);
+    padding-top: 4rem;
+}
+
+.skills-div h4 {
+    font-size: 2rem;
+
+}
+
+.skills-h2 {
+    margin-bottom: 5rem;
+}
+
+.skills-li {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .row {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-links {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
 }
 
 .card {
@@ -188,7 +370,7 @@ h1{
 .card:hover {
     transform: scale(1.05);
     transition: 0.3s;
-    border: 2px solid #39FF14;
+    border: 2px solid #c414ff;
 }
 
 h1,
@@ -214,6 +396,27 @@ h2 {
 ul {
     list-style: none;
 }
+
+form {
+    margin-top: 5rem;
+    width: 30rem;
+    border-radius: 30px;
+}
+
+.advertisement {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5rem;
+    width: 30rem;
+    border-radius: 30px;
+}
+
+.advertisement h4 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
 /* Contact Section */
 #contact {
     text-align: center;
@@ -252,8 +455,10 @@ ul {
     transform: scale(1.1);
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
+
 /* Mobile Responsive Styles */
 @media (max-width: 768px) {
+
     /* Navbar */
     .navbar {
         padding: 10px;
@@ -296,21 +501,14 @@ ul {
         width: 100%;
         max-width: 22rem;
     }
+}
 
-    /* Contact Section */
-    .contact-links {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .contact-links a {
-        width: 80%;
-        font-size: 1rem;
-        padding: 10px;
-    }
+.contact-h2 {
+    margin-bottom: 5rem;
 }
 
 @media (max-width: 480px) {
+
     /* Hero Section */
     .hero h1 {
         font-size: 2.5rem;
@@ -326,8 +524,15 @@ ul {
     }
 
     /* Contact Section */
-    .contact-links a {
+    /* .contact-links a {
         width: 100%;
         font-size: 1rem;
+    } */
+
+    form {
+        width: 85%;
+    }
+    .advertisement{
+        width: 85%;
     }
 }
